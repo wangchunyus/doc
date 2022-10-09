@@ -17,4 +17,5 @@ jobs:
         with:
           branch: master
           folder: docs/.vuepress/dist
+          token: ${{secrets.DEPLOY_KEY}}
           repository-name: wangchunyus/wangchunyus.github.io
