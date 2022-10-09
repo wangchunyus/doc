@@ -17,5 +17,5 @@ jobs:
         with:
           branch: main
           folder: docs/.vuepress/dist
-          token: ${{secrets.GITHUB_TOKEN}}
+          token: ${{secrets.SECRET_TOKEN}}
           repository-name: wangchunyus/wangchunyus.github.io
