@@ -4,11 +4,10 @@ pageClass: custom-page-class
 ---
 
 ## 个人站点
-[github](https://github.com/db117)
-[码云](https://gitee.com/db117)
-[CSDN博客](https://blog.csdn.net/weixin_38761297)
-[leetcode](https://leetcode-cn.com/u/db117/)
-[ProcessOn](https://www.processon.com/u/5aaa7a7ee4b0a84684088ded)
+[github](https://github.com/wangchunyus)
+[CSDN博客](https://blog.csdn.net/qq_37981571?spm=1010.2135.3001.5343)
+[leetcode](https://leetcode.cn/u/chun-chun-is-me/)
+[ProcessOn](https://www.processon.com/u/5ecb560b5653bb6f2a2cc6c1/profile)
 
 
 ## 搜索
@@ -16,8 +15,6 @@ pageClass: custom-page-class
 [谷歌](https://www.google.com/)
 [bing](https://cn.bing.com/)
 [维基百科](https://zh.wikipedia.org)
-[秘迹](https://mijisou.com)
-[magi]( https://magi.com/)
 [stackoverflow](https://stackoverflow.com)
 
 ## 学习
@@ -116,9 +113,6 @@ pageClass: custom-page-class
 [Gmail](https://mail.google.com/mail)
 [263](https://www.263.net/)
 [qq](https://mail.qq.com/)
-
-## 论坛
-[v2ex](https://www.v2ex.com/)
 
 ## 其他
 [腾讯云](https://cloud.tencent.com/)
