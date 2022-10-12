@@ -36,8 +36,28 @@ ApplicationContext容器中默认是在启动服务器时将所有的 作用域�
   + xml方式： 在xml中 `<bean id ='Test1' class = 'com.edu.....'  lazy-init = 'true'>`开启了延迟加载
   + 在纯注解方式： 可以在Test1 的这个实体类上 加上@Lazy 这个注解 表示开启延迟加载
 
-+ 应用场景
++ **应用场景**
   + 开启延迟加载在一定程度上可以提高容器启动和服务器运转性能。
   + 对于不常 使用的Bean设置延迟加载， 可以节省资源消耗。
 
-​             
+#### FactoryBean 和 BeanFactory             
+
++ BeanFactory 接口是容器的顶级接口，定义了容器的一些基础行为，负责产生和管理Bean的工厂，ApplicationContext等属于它的子接口。
+
++ FactoryBean 属于Spring中的工厂Bean， 可以生产某一个类型的Bean实例给我们，也就说我们可以自定义Bean的创建过程。
+
+  + FactoryBean 是一个接口，提供了三个方法 
+
+    +   T  getObject()  throws Exception;   //返回使用FactoryBean创建的实例
+
+    +   class<?> getObjectType();  //返回创建Bean的类型
+
+    +   default boolean isSingleton() {
+
+        return true;     
+
+      } //返回作用域是否单例
+
+  + FactoryBean 的使用-->  在 myBatis中的 SqlSessionFactoryBean 中使用| spring自身也有 70多个bean使用过。
+
+  
