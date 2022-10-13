@@ -61,3 +61,34 @@ ApplicationContext容器中默认是在启动服务器时将所有的 作用域�
   + FactoryBean 的使用-->  在 myBatis中的 SqlSessionFactoryBean 中使用| spring自身也有 70多个bean使用过。
 
   
+
+#### SpringBean的后置处理器
+
++ **spring 提供了两种处理bean的扩展接口**
+
+  + BeanPostProcessor **（默认是会对整个spring 容器中的所有bean进行处理）**
+
+    <!--源码-->
+
+    + ```
+      public interface BeanPostProcessor {
+      
+      // 初始化方法前 执行 ，主要做一些生成bean前的一些前置执行
+         @Nullable
+         default Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+            return bean;
+         }
+      
+        // 初始化方法后 执行 ，主要做一些生成bean后的一些后置执行
+         @Nullable
+         default Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+            return bean;
+         }
+      ```
+
+  + BeanFactoryPostProcessor（**BeanFactory级别的处理，是针对整个Bean的⼯⼚进⾏处理，典型应**
+
+    **⽤:PropertyPlaceholderConfifigurer**）
+
+    +   PropertyPlaceholderConfifigurer： 源码中处理 封装xml bean信息的 BeanDefinition 中的一些 properties中的信息  例如：  dataSource 中的一些  数据 ${username} / ${password} 的信息进行 转换后 在封装到 BeanDefinition中 
+
