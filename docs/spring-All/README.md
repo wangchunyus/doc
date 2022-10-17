@@ -92,3 +92,6 @@ ApplicationContext容器中默认是在启动服务器时将所有的 作用域�
 
     +   PropertyPlaceholderConfifigurer： 源码中处理 封装xml bean信息的 BeanDefinition 中的一些 properties中的信息  例如：  dataSource 中的一些  数据 ${username} / ${password} 的信息进行 转换后 在封装到 BeanDefinition中 
 
+#### Spring-IoC源码
+
++ Bean对象创建的关键方法是 AbstractApplicationContext  类中那个的 refaresh() 方法  核心方法
