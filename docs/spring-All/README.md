@@ -95,3 +95,10 @@ ApplicationContext容器中默认是在启动服务器时将所有的 作用域�
 #### Spring-IoC源码
 
 + Bean对象创建的关键方法是 AbstractApplicationContext  类中那个的 refaresh() 方法  核心方法
+
+
+
+#### Spring-循环依赖问题
+
+解决方案讲解地址： [https://blog.csdn.net/qq_40277163/article/details/124399551]( https://blog.csdn.net/qq_40277163/article/details/124399551)
+
